@@ -1,7 +1,7 @@
 
 ### `docker-build.md`
 
-```markdown
+
 # docker build
 
 The `docker build` command is used to build a Docker image from a Dockerfile. A Dockerfile is a text file that contains a set of instructions for creating a custom Docker image.
@@ -13,10 +13,15 @@ docker build [OPTIONS] PATH | URL | -
 ```
 
 Common Options
+
 -t or --tag: Name and optionally a tag in the 'name:tag' format.
+
 --build-arg: Set build-time variables.
+
 --file: Specify the path to the Dockerfile.
+
 --no-cache: Do not use cache when building the image.
+
 
 Examples
 Build an image from the current directory using the default Dockerfile (Dockerfile in the current directory):
