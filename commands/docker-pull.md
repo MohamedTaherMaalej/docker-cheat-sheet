@@ -9,9 +9,13 @@ docker pull [OPTIONS] NAME[:TAG|@DIGEST]
 ```
 
 Common Options
+
 --all-tags: Pull all available image tags for the given repository.
+
 --disable-content-trust: Skip image signature verification.
+
 -a or --arch: Specify the architecture for the image.
+
 --platform: Set the platform for which to pull the image.
 
 Examples
