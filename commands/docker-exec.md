@@ -8,11 +8,17 @@ The `docker exec` command is used to run commands inside a running Docker contai
 docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
 ```
 Common Options
+
 -d or --detach: Run the command in the background.
+
 -i or --interactive: Keep STDIN open even if not attached.
+
 -t or --tty: Allocate a pseudo-TTY.
+
 --user: Specify the username or UID and optionally the group name or GID to use when running the command.
+
 Examples
+
 Run a command in an interactive shell:
 
 ```shell
