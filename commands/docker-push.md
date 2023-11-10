@@ -9,7 +9,9 @@ docker push [OPTIONS] NAME[:TAG]
 ```
 
 Common Options
+
 --disable-content-trust: Skip image signature verification.
+
 --all-tags: Push all tagged images.
 
 Examples
