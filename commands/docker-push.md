@@ -8,26 +8,26 @@ The `docker push` command is used to push a Docker image to a specified containe
 docker push [OPTIONS] NAME[:TAG]
 ```
 
-Common Options
+## Common Options
 
---disable-content-trust: Skip image signature verification.
+- **`--disable-content-trust`**: Skip image signature verification.
+- **`--all-tags`**: Push all tagged images.
 
---all-tags: Push all tagged images.
+## Examples
 
-Examples
-Push an image to Docker Hub:
+1. Push an image to Docker Hub:
+   ```shell
+   docker push my-username/my-image:latest
+   ```
 
-docker push my-username/my-image:latest
-Skip content trust and push the image:
+2. Skip content trust and push the image:
+   ```shell
+   docker push --disable-content-trust my-registry/my-image:latest
+   ```
 
-```shell
-docker push --disable-content-trust my-registry/my-image:latest
-```
+3. Push all tagged images for a repository:
+   ```shell
+   docker push --all-tags my-registry/my-image
+   ```
 
-Push all tagged images for a repository:
-
-```shell
-docker push --all-tags my-registry/my-image
-```
-
-The docker push command is crucial when you want to share your Docker images with others by uploading them to a container registry. Ensure you have the necessary permissions to push images to the specified registry.
+The `docker push` command is crucial when you want to share your Docker images with others by uploading them to a container registry. Ensure you have the necessary permissions to push images to the specified registry.
